@@ -1,22 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import Typewriter from "typewriter-effect";
 
 function Type() {
+  const { t } = useTranslation();
   return (
     <Typewriter
       options={{
-        strings: [
-          "Software Developer",
-          "Freelancer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+        strings: t("typewriter.strings", { returnObjects: true }),
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        delay: 70,
+        deleteSpeed: 35,
       }}
     />
   );
 }
-
 export default Type;

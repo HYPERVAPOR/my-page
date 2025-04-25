@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -17,8 +18,14 @@ import {
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
+  const { t, i18n } = useTranslation();
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    updateExpanded(false);
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -55,7 +62,8 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.home")}
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +73,8 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.about")}
               </Nav.Link>
             </Nav.Item>
 
@@ -78,7 +87,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {t("navbar.projects")}
               </Nav.Link>
             </Nav.Item>
 
@@ -88,29 +97,22 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} />{" "}
+                {t("navbar.resume")}
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as="button"
+                onClick={() =>
+                  changeLanguage(i18n.language === "en" ? "zh" : "en")
+                }
+                style={{ marginBottom: "2px" }}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <span style={{ marginRight: "5px" }}>🌐</span>
+                {t("common.language.switch")}
               </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

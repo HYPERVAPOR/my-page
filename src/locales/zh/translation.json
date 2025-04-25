@@ -1,0 +1,127 @@
+{
+  "common": {
+    "language": {
+      "switch": "English"
+    }
+  },
+  "navbar": {
+    "home": "首页",
+    "about": "关于",
+    "projects": "项目",
+    "resume": "简历",
+    "blogs": "博客"
+  },
+  "home": {
+    "title": "你好！",
+    "subtitle": "我是",
+    "name": "刘哲宁",
+    "description": "一名热爱开发web应用的程序员"
+  },
+  "about": {
+    "title1": "关于",
+    "title2": "我",
+    "bio": "我是一名全栈开发者，拥有...经验",
+    "skillsTitle": "技术栈",
+    "toolsTitle1": "我的",
+    "toolsTitle2": "开发工具",
+    "aboutCard": {
+      "intro1": "你好，我是",
+      "name": "刘哲宁",
+      "intro2": "来自",
+      "location": "中国成都市",
+      "currentJob": "目前正在寻求实习机会🥳",
+      "education": "我是一名在读的计算机研究生",
+      "activitiesTitle": "除了编程，我还喜欢做这些事情！",
+      "activity1": "玩游戏",
+      "activity2": "弹吉他",
+      "activity3": "编曲",
+      "quote": "努力构建能带来改变的事物！",
+      "author": "Soumyajit",
+      "example1": "这是一个演示用的示例文本",
+      "example2": "另一个国际化实现的示例文本",
+      "example3": "展示翻译用法的示例内容"
+    }
+  },
+  "typewriter": {
+    "strings": [
+      "计算机专业硕士研究生",
+      "软件开发者",
+      "音乐制作人",
+      "开源贡献者"
+    ]
+  },
+  "projects": {
+    "title": "我的",
+    "subtitle": "项目",
+    "description": "我的近期作品",
+    "blog": "博客",
+    "github": "GitHub",
+    "demo": "演示",
+    "chatify": {
+      "fullDescription": "使用react.js、Material-UI和Firebase构建的个人聊天室或工作空间，可以分享资源和与朋友交流。具有实时消息、图片分享和消息反应等功能。"
+    },
+    "bitsOfCode": {
+      "fullDescription": "使用Next.js和Tailwind CSS构建的个人博客页面，从markdown文件获取内容并使用Next.js渲染。支持暗黑模式和方便的markdown写作。"
+    },
+    "editor": {
+      "fullDescription": "使用react.js构建的在线代码和markdown编辑器。支持html、css和js代码的即时预览，以及带有工具栏和即时预览的README文件编辑。两种编辑器都支持使用本地存储自动保存工作。"
+    },
+    "leaf": {
+      "fullDescription": "使用Kaggle的植物病害数据集，通过CNN和迁移学习训练了一个图像分类模型，能够成功检测14种不同植物的病害和健康叶片。使用Resnet34预训练模型达到了98%的准确率。"
+    },
+    "suicide": {
+      "fullDescription": "使用'自然语言处理'技术检测网络空间中的自杀相关帖子和用户自杀意念，从而帮助预防自杀。"
+    },
+    "emotion": {
+      "fullDescription": "使用'FER-2013数据集'训练了一个CNN分类器，能够成功预测人类的各种情绪。模型的最高准确率达到60.1%。然后使用Open-CV检测图像中的人脸，并将其传递给分类器预测人的情绪。"
+    },
+
+    "bilibili-crawler": {
+      "fullDescription": "根据关键字列表爬取 Bilibili 视频信息的后端应用。原理是使用 axios 进行 HTTP 请求，并利用 cheerio 解析返回的 HTML 数据"
+    },
+    "mcp-image-processor": {
+      "fullDescription": "基于 Model Context Protocol (MCP) 的高性能图像处理服务器，提供格式转换、尺寸调整、压缩优化等丰富的图像处理功能"
+    },
+    "continue-zh": {
+      "fullDescription": "fork自开源项目，为有特殊安全需求的开发人员定制的IDE扩展解决方案"
+    }
+  },
+  "resume": {
+    "title": "简历",
+    "download": "下载简历"
+  },
+  "github": {
+    "title": "Github 日历"
+  },
+  "footer": {
+    "copyright": "MIT © 2025"
+  },
+  "codeblock": {
+    "language": "编程语言"
+  },
+  "tooltip": {
+    "backToTop": "返回顶部"
+  },
+  "home2": {
+    "title": "让我",
+    "introduce": "介绍",
+    "myself": "自己",
+    "intro1": "平时会做一些开发💻",
+    "intro2": "我使用这些语言：",
+    "languages": "C++、Javascript和Python",
+    "interests1": "我会尝试构建新的",
+    "webTech": "Web应用",
+    "andAlso": "以及探索",
+    "blockchain": "大语言模型",
+    "passion": "此外，我也会使用",
+    "nodejs": "Node.js",
+    "and": "和",
+    "modernJS": "现代JavaScript库和框架",
+    "like": "例如",
+    "frameworks": "React.js和Next.js",
+    "findMe": "与我共事",
+    "connect1": "请",
+    "connect2": "联系",
+    "connect3": "我"
+  }
+}
