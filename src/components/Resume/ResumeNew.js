@@ -24,22 +24,30 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Col md="auto">
+        <Row
+          className="d-flex flex-column flex-md-row justify-content-center align-items-center"
+          style={{
+            position: "relative",
+            marginTop: "5rem",
+            gap: "1rem",
+            padding: "0 1rem",
+          }}
+        >
+          <Col xs="auto" className="p-0">
             <Button
               variant={isEnglishCV ? "outline-primary" : "primary"}
               onClick={() => setIsEnglishCV(!isEnglishCV)}
-              style={{ marginRight: "10px", maxWidth: "250px" }}
+              style={{ width: "100%", minWidth: "200px" }}
             >
               {isEnglishCV ? "中文简历" : "English Resume"}
             </Button>
           </Col>
-          <Col md="auto">
+          <Col xs="auto" className="p-0">
             <Button
               variant="primary"
               href={pdf}
               target="_blank"
-              style={{ maxWidth: "250px" }}
+              style={{ width: "100%", minWidth: "200px" }}
             >
               <AiOutlineDownload />
               &nbsp;{t("resume.download")}
