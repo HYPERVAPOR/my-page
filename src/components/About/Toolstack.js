@@ -4,8 +4,9 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiPycharm,
-  SiAbletonlive,
+  SiOpenai,
   SiLinux,
+  SiAlibabacloud,
 } from "react-icons/si";
 
 function Toolstack() {
@@ -21,10 +22,10 @@ function Toolstack() {
         <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPycharm />
+        <SiOpenai />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiAbletonlive />
+        <SiAlibabacloud />
       </Col>
     </Row>
   );
